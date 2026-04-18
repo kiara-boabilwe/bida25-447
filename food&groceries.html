@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woolmarts Groceries</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Banner -->
+  <header class="bg-pink text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Fresh Arrivals</h1>
+      <p class="lead">Farm-Fresh Quality Delivered to You.</p>
+      <a href="#" class="btn btn-primary me-2">Shop Organics</a>
+      <a href="#" class="btn btn-outline-primary">View Weekly Deals</a>
+    </div>
+  </header>
+
+  <!-- Category Navigation -->
+  <section class="py-4 bg-light">
+    <div class="container text-center">
+      <h4>All Products</h4>
+      <div class="row mt-3">
+        <div class="col-md-3"><a href="#" class="category-link">Fresh Produce</a></div>
+        <div class="col-md-3"><a href="#" class="category-link">Dairy & Eggs</a></div>
+        <div class="col-md-3"><a href="#" class="category-link">Pantry Staples</a></div>
+        <div class="col-md-3"><a href="#" class="category-link">Beverages</a></div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-3"><a href="#" class="category-link">Frozen Food</a></div>
+        <div class="col-md-3"><a href="#" class="category-link">Bakery</a></div>
+        <div class="col-md-3"><a href="#" class="category-link">Organic</a></div>
+        <div class="col-md-3"><a href="#" class="category-link">Snacks</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="py-4">
+    <div class="container">
+      <h4>Grocery Filters</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <h6>Product Type</h6>
+          <div><input type="checkbox"> Fruits & Vegetables</div>
+          <div><input type="checkbox"> Meat & Seafood</div>
+          <div><input type="checkbox"> Dairy & Eggs</div>
+          <div><input type="checkbox"> Pantry Staples</div>
+          <div><input type="checkbox"> Frozen Food</div>
+          <div><input type="checkbox"> Beverages</div>
+        </div>
+        <div class="col-md-4">
+          <h6>Price Range</h6>
+          <input type="range" class="form-range" min="0" max="100">
+        </div>
+        <div class="col-md-4">
+          <h6>Dietary Needs</h6>
+          <div><input type="checkbox"> Vegan</div>
+          <div><input type="checkbox"> Gluten-Free</div>
+          <div><input type="checkbox"> Dairy-Free</div>
+          <div><input type="checkbox"> No Added Sugar</div>
+          <div><input type="checkbox"> Keto-Friendly</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Fresh Produce & More (Showing 1–24 of 152 items)</h2>
+      <div class="row g-4">
+        <!-- Product Card -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/apples.jpg" class="card-img-top" alt="Organic Red Apples">
+            <div class="card-body">
+              <h5 class="card-title">Organic Red Apples</h5>
+              <p class="card-text">1.5 kg Bag — $4.99</p>
+              <a href="#" class="btn btn-primary">Add</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for other products -->
+      </div>
+      <!-- Pagination -->
+      <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Brand Filter -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <h4>Brand</h4>
+      <div><input type="checkbox"> Organic Farms</div>
+      <div><input type="checkbox"> Daily Fresh</div>
+      <div><input type="checkbox"> Nature Pick</div>
+      <div><input type="checkbox"> Pantry Pride</div>
+      <div><input type="checkbox"> EcoGreen</div>
+    </div>
+  </section>
+
+  <!-- Sustainability Section -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h3>Eco-Conscious Choice</h3>
+      <p>We donate 1% of all grocery sales to local sustainable farming.</p>
+      <a href="#" class="btn btn-outline-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2026 Woolmarts Inc. All rights reserved.</p>
+    <p>support@woolmarts.com</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

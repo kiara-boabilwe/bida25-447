@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woolmarts Feedback</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Banner -->
+  <header class="bg-pink text-center py-5">
+    <div class="container">
+      <h1 class="display-4">We Value Your Voice</h1>
+      <p class="lead">Whether you have a question about an order, a suggestion for our catalog, or just want to say hello, our team is here to listen and help.</p>
+    </div>
+  </header>
+
+  <!-- Feedback Form -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Send us a message</h2>
+      <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Jane Doe">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="jane@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" placeholder="e.g. Inquiry about order #12345">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="How can we help you today?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Feedback</button>
+        <p class="mt-2"><small>Average response time: 24 hours</small></p>
+      </form>
+      <p class="mt-3"><small>By submitting this form, you agree to our Privacy Policy and Terms of Service. Please do not include sensitive information like credit card numbers or passwords.</small></p>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h3>Contact Us</h3>
+      <p><strong>Call Us:</strong> +1 (555) 123-4567 (Mon–Fri, 9am–6pm EST)</p>
+      <p><strong>Email Us:</strong> support@woolmarts.com</p>
+      <p><strong>Headquarters:</strong> 123 Retail Plaza, New York, NY 10001</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-5">
+    <div class="container">
+      <h3>Frequent Questions</h3>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+              How can I track my order?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can track your order by clicking on the "Track Order" link in your confirmation email or by visiting the "My Account" section and viewing your order history.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+              What is your return policy?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              We offer a 30-day hassle-free return policy. Please see our Terms of Service for details.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+              How do I join the Member program?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can join Woolmarts Gold by visiting the Membership page and signing up online.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-light py-5 text-center">
+    <div class="container">
+      <h3>Stay in the Loop</h3>
+      <form class="d-flex justify-content-center">
+        <input type="email" class="form-control w-50 me-2" placeholder="Your best email...">
+        <button class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="mt-2">Get our weekly newsletter for the latest deals and updates.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2026 Woolmarts Inc. All rights reserved.</p>
+    <p>support@woolmarts.com</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
