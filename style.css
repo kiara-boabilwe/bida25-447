@@ -1,74 +1,143 @@
 :root {
-  --main-pink: #f5c6d6;
-  --accent-pink: #e89ab3;
+  --pink: #f4c2d7;
+  --deep-pink: #e38aa6;
 }
 
 body {
   font-family: system-ui;
-}
-
-/* NAV */
-.navbar {
   background: white;
 }
 
-.brand {
-  font-weight: 700;
-  color: var(--accent-pink);
+/* NAV */
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo {
-  width: 12px;
-  height: 12px;
-  background: var(--accent-pink);
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--deep-pink);
   border-radius: 50%;
 }
 
-.nav-center a {
+.brand {
+  color: var(--deep-pink);
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
   text-decoration: none;
   color: #444;
 }
 
-/* SEARCH */
-.search-box {
+.nav-right {
   display: flex;
   align-items: center;
-  background: #f7f7f7;
-  padding: 5px 10px;
-  border-radius: 8px;
+  gap: 15px;
 }
 
-.search-box input {
+/* SEARCH */
+.search {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.search input {
   border: none;
   background: transparent;
   outline: none;
-  margin-left: 5px;
+  width: 120px;
 }
 
-/* BUTTON */
-.btn-main {
-  background: var(--accent-pink);
-  color: white;
-  border: none;
+/* HERO */
+.hero {
+  padding: 60px 0;
 }
 
-/* PRODUCT */
-.product-card img {
+.hero h1 {
+  font-weight: 700;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 40px 0;
+}
+
+.card img {
   width: 100%;
   border-radius: 10px;
 }
 
+.card p {
+  margin: 5px 0 0;
+}
+
+.card span {
+  color: #777;
+}
+
 /* NEWSLETTER */
 .newsletter {
-  background: var(--main-pink);
+  background: var(--pink);
+  padding: 40px;
+  margin: 60px auto;
+  border-radius: 12px;
+  width: 80%;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscribe input {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+.subscribe button {
+  background: var(--deep-pink);
+  color: white;
+  border: none;
+  padding: 8px 15px;
 }
 
 /* FOOTER */
 .footer {
   background: #fafafa;
+  padding: 40px 0;
 }
 
 .footer i {
   margin-right: 10px;
-  font-size: 1.2rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #777;
 }
