@@ -12,28 +12,47 @@
 <body>
 
 <!-- HEADER -->
-<header class="header">
-    <div class="logo">Woolmarts</div>
+<header>
+    <nav class="navbar">
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="clothing.html">Clothing</a>
-        <a href="groceries.html">Food & Groceries</a>
-        <a href="essentials.html">Essentials</a>
-        <a href="promotions.html">Promotions</a>
-        <a href="members.html">Members</a>
-        <a href="feedback.html">Feedback</a>
-        <a href="login.html">Login</a>
+        <!-- LEFT SIDE -->
+        <div class="nav-left">
+            <h1 class="logo">Woolmarts</h1>
+
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Clothing</a>
+                <a href="#">Groceries</a>
+                <a href="#">Household</a>
+                <a href="#">Promotions</a>
+                <a href="#">Feedback</a>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="nav-right">
+
+            <!-- SEARCH -->
+            <div class="search-container">
+                <input type="text" placeholder="Search products" id="searchInput">
+                <button onclick="searchProduct()">
+                    🔍
+                </button>
+            </div>
+
+            <!-- ICONS -->
+            <div class="icons">
+                <div class="icon user">👤</div>
+
+                <div class="icon cart">
+                    🛒
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+
+        </div>
+
     </nav>
-
-    <input type="text" id="searchBar" placeholder="Search products..." />
-
-    <div class="user profile">
-
-    </div>
-    <div class="cart">
-        🛒 <span id="cart-count">0</span>
-    </div>
 </header>
 
 <!-- HERO SLIDER -->
