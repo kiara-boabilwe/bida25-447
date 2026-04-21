@@ -269,3 +269,72 @@
     background: #ffe4dc;
     transform: translateY(-2px);
 }
+ 
+/* SECTION */
+.featured {
+    padding: 50px 80px;
+    background: #fff;
+}
+
+.featured h2 {
+    color: #e8a0a8;
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.product-card {
+    background: #fffaf7;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* IMAGE */
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* NAME + PRICE */
+.product-card h3,
+.product-card .price {
+    color: #e8a0a8;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card:hover h3,
+.product-card:hover .price {
+    transform: scale(1.05);
+}
+
+/* BUTTON */
+.product-card button {
+    margin-top: 10px;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+}
+
+/* SCROLL EFFECT */
+.products-grid {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
