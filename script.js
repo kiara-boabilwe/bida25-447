@@ -54,3 +54,7 @@ function addToCart(product) {
 
     alert(product + " added to cart");
 }
+
+function goToPage(page) {
+    window.location.href = page;
+}

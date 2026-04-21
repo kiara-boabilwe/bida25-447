@@ -338,3 +338,104 @@
     overflow-y: auto;
     padding-right: 10px;
 }
+
+/* SECTION */
+.categories-section {
+    padding: 60px 80px;
+    background: #fff;
+}
+
+.categories-section h2 {
+    color: #e8a0a8;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 30px;
+}
+
+/* GRID LAYOUT */
+.category-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+/* BIG LEFT */
+.category-card.large {
+    grid-row: span 2;
+}
+
+/* CARD */
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* IMAGE */
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    color: white;
+}
+
+/* TEXT */
+.overlay h3 {
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ARROW BUTTON */
+.arrow {
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* HOVER EFFECT */
+.category-card:hover img {
+    transform: scale(1.08);
+}
+
+/* ADD SUBTLE DARKEN ON HOVER */
+.category-card:hover .overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+}
+
+@media (max-width: 768px) {
+
+    .category-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .category-card.large {
+        grid-row: span 1;
+    }
+
+}
