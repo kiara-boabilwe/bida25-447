@@ -1,3 +1,4 @@
+// SEARCH FUNCTION
 function searchProduct() {
     let input = document.getElementById("searchInput").value;
     alert("Searching for: " + input);
@@ -57,4 +58,15 @@ function addToCart(product) {
 
 function goToPage(page) {
     window.location.href = page;
+}
+
+// SUBSCRIBE
+function subscribe() {
+    let email = document.getElementById("emailInput").value;
+
+    if (email === "") {
+        alert("Please enter your email.");
+    } else {
+        alert("Subscribed successfully!");
+    }
 }
