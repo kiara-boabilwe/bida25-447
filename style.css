@@ -16,13 +16,13 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #5a3e36;
+    color: #ebb8aa;
 }
 
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #5a3e36;
+    color: #f8d7da;
 }
 
 .cart {
@@ -37,7 +37,8 @@ nav a {
 }
 
 .slide {
-    position: absolute;
+    position: right absolute;
+    right: 0;
     width: 50%;
     height: 100%;
     display: none;
@@ -48,7 +49,6 @@ nav a {
 }
 
 .slide img {
-  position: right 0;
     width: 40%;
     height: 100%;
     object-fit: cover;
