@@ -48,7 +48,8 @@ nav a {
 }
 
 .slide img {
-    width: 50%;
+  position: right 0;
+    width: 40%;
     height: 100%;
     object-fit: cover;
 }
