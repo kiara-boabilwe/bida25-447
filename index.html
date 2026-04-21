@@ -57,22 +57,49 @@
 
 <!-- HERO SLIDER -->
 <section class="hero">
-    <div class="slide active">
-        <img src="images/new-arrivals.jpg">
-        <div class="overlay">
-            <h1>Fresh Groceries Delivered</h1>
-            <button>Shop Now</button>
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-text">
+        <h1>Elevate Your Everyday Living.</h1>
+
+        <p>
+            Discover a curated collection of premium clothing, organic groceries, 
+            and household essentials designed for the modern home.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="shop-btn" onclick="goToShop()">Shop Now</button>
+            <button class="sales-btn" onclick="goToSales()">View Sales</button>
+        </div>
+
+        <div class="hero-stats">
+            <span>12k+ happy customers</span>
+            <span>4.9/5 average rating</span>
         </div>
     </div>
 
-    <div class="slide">
-        <img src="images/new-arrivals.jpg">
-        <div class="overlay">
-            <h1>New Fashion Arrivals</h1>
-            <button>Explore</button>
-        </div>
+    <!-- RIGHT IMAGE SLIDER -->
+    <div class="hero-image">
+        <img src="images/new arrivals.jpg" class="hero-slide active">
+        <img src="images/householdap.jpg" class="hero-slide">
+        <img src="images/clothingap.jpg" class="hero-slide">
     </div>
+
 </section>
+
+<!-- MOVING BANNER -->
+<div class="info-bar">
+    <div class="info-track">
+        <span>💗 FREE EXPRESS SHIPPING ON ORDERS OVER P1200</span>
+        <span>💗 30-DAY HASSLE FREE RETURNS</span>
+        <span>💗 SECURE CHECKOUT GUARANTEED</span>
+
+        <!-- DUPLICATE FOR LOOP EFFECT -->
+        <span>💗 FREE EXPRESS SHIPPING ON ORDERS OVER P1200</span>
+        <span>💗 30-DAY HASSLE FREE RETURNS</span>
+        <span>💗 SECURE CHECKOUT GUARANTEED</span>
+    </div>
+</div>
 
 <!-- PRODUCTS -->
 <section class="products">

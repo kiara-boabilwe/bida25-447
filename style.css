@@ -113,3 +113,159 @@
     }
 
 }
+
+/* HERO LAYOUT */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+/* LEFT TEXT */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.shop-btn {
+    background: #e8a0a8;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.sales-btn {
+    background: white;
+    color: #e8a0a8;
+    border: 2px solid #e8a0a8;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* STATS */
+.hero-stats {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+}
+
+/* RIGHT IMAGE */
+.hero-image {
+    flex: 0.45;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* INFO BAR */
+.info-bar {
+    width: 100%;
+    background: black;
+    overflow: hidden;
+}
+
+.info-track {
+    display: flex;
+    gap: 50px;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+    padding: 10px 0;
+}
+
+.info-track span {
+    color: white;
+    font-size: 14px;
+}
+
+/* CONTINUOUS SCROLL */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+}
+
+/* HERO IMAGE SLIDER */
+.hero-image {
+    flex: 0.45;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 15px;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* BUTTON HOVER EFFECTS */
+.shop-btn:hover {
+    background: #d98c95;
+    transform: translateY(-2px);
+}
+
+.sales-btn:hover {
+    background: #ffe4dc;
+    transform: translateY(-2px);
+}
